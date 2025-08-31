@@ -9,54 +9,50 @@
 <body>
   <header class="header">
     <h1>Visual Product Matcher</h1>
+    <p>Upload an image or enter an image URL to find visually similar products</p>
   </header>
 
   <main class="container">
-    <!-- Left Sidebar -->
-    <aside class="upload-card">
-      <p>Upload an image or enter an image URL to find visually similar products</p>
-
-      <!-- File upload -->
+    <section class="upload-card">
+      <!-- Upload Row -->
       <div class="upload-row">
         <input id="fileInput" type="file" accept="image/*" />
-        <button id="btnProcess">Process</button>
+        <button id="btnProcess" >Process</button>
       </div>
 
-      <!-- OR separator -->
-      <div class="or-divider"><span>OR</span></div>
+      <!-- OR Divider -->
+      <div class="or-divider">
+        <span>OR</span>
+      </div>
 
-      <!-- URL input -->
+      <!-- URL Input Row -->
       <div class="upload-row">
         <input id="urlInput" type="url" placeholder="Enter image URL" />
       </div>
 
-      <!-- Image preview -->
+      <!-- Preview -->
       <div class="preview">
         <img id="previewImg" alt="Preview will appear here" />
       </div>
 
       <div id="status" class="status"></div>
+    </section>
 
-      <!-- Similarity filter -->
-      <div class="controls">
-        <label for="scoreFilter">
-          Minimum similarity: <span id="scoreValue">0.00</span>
-        </label>
-        <input id="scoreFilter" type="range" min="0" max="100" value="0" />
-      </div>
-    </aside>
+    <section class="controls">
+      <label for="scoreFilter">Minimum similarity: <span id="scoreValue">0.00</span></label>
+      <input id="scoreFilter" type="range" min="0" max="100" value="0" />
+    </section>
 
-    <!-- Right Content -->
-    <section class="results-section">
+    <section>
       <h2>Top Matches</h2>
       <div id="results" class="grid"></div>
     </section>
   </main>
 
-  <footer class="footer">
-    <small>© 2025 Visual Product Matcher</small>
-  </footer>
+  
 
   <script src="./script.js"></script>
 </body>
 </html>
+
+
