@@ -17,7 +17,8 @@ app.mount("/uploads", StaticFiles(directory="uploads"), name="uploads")
 # Allow frontend to talk to backend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],   # change to frontend URL later
+    allow_origins=["https://68b45c96d23184d535e5390b--reliable-sprite-eece8f.netlify.app/",
+                  "https://68b45c96d23184d535e5390b--reliable-sprite-eece8f.netlify.app"],   # change to frontend URL later
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
