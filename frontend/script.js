@@ -1,5 +1,5 @@
 // ======= CONFIG =======
-const API_BASE = "http://127.0.0.1:8000"; // FastAPI base URL
+const API_BASE = "https://unthinkable-68r5.onrender.com"; // FastAPI base URL
 
 // ======= ELEMENTS =======
 const fileInput   = document.getElementById("fileInput");
