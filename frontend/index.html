@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Visual Product Matcher</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>Visual Product Matcher</h1>
+    <p>Upload an image or enter an image URL to find visually similar products</p>
+  </header>
+
+  <main class="container">
+    <section class="upload-card">
+      <!-- Upload Row -->
+      <div class="upload-row">
+        <input id="fileInput" type="file" accept="image/*" />
+        <button id="btnProcess" disabled>Process</button>
+      </div>
+
+      <!-- OR Divider -->
+      <div class="or-divider">
+        <span>OR</span>
+      </div>
+
+      <!-- URL Input Row -->
+      <div class="upload-row">
+        <input id="urlInput" type="url" placeholder="Enter image URL" />
+      </div>
+
+      <!-- Preview -->
+      <div class="preview">
+        <img id="previewImg" alt="Preview will appear here" />
+      </div>
+
+      <div id="status" class="status"></div>
+    </section>
+
+    <section class="controls">
+      <label for="scoreFilter">Minimum similarity: <span id="scoreValue">0.00</span></label>
+      <input id="scoreFilter" type="range" min="0" max="100" value="0" />
+    </section>
+
+    <section>
+      <h2>Top Matches</h2>
+      <div id="results" class="grid"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>© Tarun Bhatia • Assignment</small>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
