@@ -53,7 +53,7 @@ urlInput.addEventListener("input", () => {
 // ======= PROCESS BUTTON =======
 btnProcess.addEventListener("click", async () => {
   try {
-    btnProcess.disabled = true;
+    btnProcess.disabled = false;
     setStatus("Uploading & processing… please wait");
 
     if (uploadedUrl) {
