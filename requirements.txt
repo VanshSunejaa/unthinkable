@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+pymongo
+motor
+tensorflow
+numpy
+scikit-learn
+pillow
+python-dotenv
